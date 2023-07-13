@@ -7,6 +7,9 @@ import { IProduct } from "./product";
     styleUrls: ['./product-list.component.css'],
 })
 export class ProductListComponent implements OnInit {
+    onRatingClicked(message: string) : void {
+        this.pageTitel = "Product List: " + message;
+    }
 
     pageTitel = "Product List";
     imageWidth = 50;

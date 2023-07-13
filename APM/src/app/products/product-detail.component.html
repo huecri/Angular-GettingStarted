@@ -1,6 +1,12 @@
 <div class="card">
-    <div class="card-header" *ngIf="product">
-        {{pageTitle + ': ' + product.productName}}
+    <div class="card-header">
+        {{pageTitle + ': ' + product?.productName}}
+    </div>
+    <div class="card-body">
+        <table>
+            <tr>{{product?.price}}</tr>
+            <tr>Product Description: </tr>
+        </table>
     </div>
     <div class="card-footer">
         <button class="btn btn-outline-secondary"
